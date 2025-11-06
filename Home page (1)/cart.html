@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cart</title>
+  <link rel="stylesheet" href="cart.css" />
+</head>
+<body>
+  <div class="top-bar">
+    <button class="back-btn" onclick="window.history.back()">← Back</button>
+    <h2>My Cart</h2>
+  </div>
+
+  <div id="cart-items" class="cart-container"></div>
+
+  <div class="bottom-bar">
+    <span id="total-amount">Total: Rs.0</span>
+    <button class="checkout-btn" onclick="goTocartCheckout()">Proceed to Checkout</button>
+    
+</div>
+  </div>
+
+
+  <script src="cart.js"></script>
+</body>
+</html>

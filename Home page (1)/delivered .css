@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #33691e;
+  color: white;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.order-tabs {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+.order-tabs a {
+  text-decoration: none;
+  color: #33691e;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+.order-tabs a.active {
+  background-color: #ffd82a;
+  color: black;
+}
+
+.orders-container {
+  padding: 16px;
+}
+
+.order-card {
+  background-color: white;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.reorder-btn {
+  background-color: #33691e;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+.reorder-btn:hover {
+  background-color: #558b2f;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #33691e;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  border-top: 1px solid #ccc;
+}
+
+.bottom-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 10px;
+}
+
+.bottom-nav a.active {
+  background-color: #ffd82a;
+  color: black;
+}
+

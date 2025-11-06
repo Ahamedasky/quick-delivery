@@ -1,0 +1,143 @@
+/* chef.css */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+.search-container {
+  display: flex;
+    align-items: center;
+    margin: 12px;
+    background-color: #ffffff;
+    border-radius: 50px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.search-container input {
+  flex: 1;
+    padding: 12px 18px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+  border-radius: 8px  0  0  8px;
+}
+
+
+
+/* Secondary Navigation */
+.secondary-nav {
+  display: flex;
+    justify-content: space-around;
+    margin: 0 10px;
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+
+.secondary-nav a {
+  flex: 1;
+    text-align: center;
+    padding: 12px 0;
+    color: #33691e;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.secondary-nav a.active {
+  background-color: #ffd82a;
+    color: black;
+}
+
+
+
+
+.recipes-container {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column; /* ✅ ஒன்றன் கீழ் ஒன்று வர செய்யும் */
+  gap: 50px; /* ✅ இடைவெளி */
+  padding: 20px;
+}
+
+.recipe-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 20px; /* அதிகமாக */
+  gap: 10px;     /* Image & Text இடைவெளி அதிகமாக */
+  min-height: 250px; /* ✅ Height அதிகமாக */
+  transition: transform 0.2s;
+}
+
+
+
+
+.recipe-card:hover {
+  transform: scale(1.02); /* ✅ Hover effect */
+}
+
+.recipe-img {
+  width: 300px; /* ✅ அதிகப்படுத்திய அளவு */
+  height: 300px; /* ✅ அதிகப்படுத்திய அளவு */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.recipe-card .recipe-info h3 {
+  font-size: 22px; /* ✅ இன்னும் நல்லா தெரியும் */
+  font-weight: bold;
+  margin: 0;
+}
+
+
+.recipe-title {
+  padding: 0.7rem;
+  font-size: 0.3rem;
+  font-weight: bold;
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #33691e;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 0;
+  border-top: 1px solid #ccc;
+  z-index: 1000;
+  left:0;
+  right:0;
+  z-index: 20;
+}
+
+.bottom-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+.bottom-nav a.active {
+  background-color: #ffd82a;
+  color: black;
+}

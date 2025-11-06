@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Top Bar */
+.top-bar {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #33691e;
+  color: white;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+/* Order Tabs */
+.order-tabs {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+.order-tabs a {
+  color: #33691e;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+.order-tabs a.active {
+  background-color: #ffd82a;
+  color: black;
+}
+
+/* Order Cards */
+.order-list {
+  padding: 16px;
+}
+
+.order-card {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 16px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.order-card h3 {
+  margin: 0 0 10px;
+}
+
+.status.shipped {
+  color: #33691e;
+  font-weight: bold;
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #33691e;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+.bottom-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 10px;
+}
+
+.bottom-nav a.active {
+  background-color: #ffd82a;
+  color: black;
+}
+

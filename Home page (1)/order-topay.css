@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Top Search Bar */
+.top-bar {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #33691e;
+  color: white;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.search-container {
+  flex-grow: 1;
+  display: flex;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.search-container input {
+  flex: 1;
+  padding: 8px 10px;
+  border: none;
+  outline: none;
+}
+
+.search-btn {
+  padding: 8px 12px;
+  background-color: #ffd82a;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Secondary Navigation */
+.secondary-nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+.secondary-nav a {
+  color: #33691e;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+.secondary-nav a.active {
+  background-color: #ffd82a;
+  color: black;
+}
+
+/* Order Tabs */
+.order-tabs {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  background-color:smokewhite;
+}
+
+.order-tabs a {
+  text-decoration: none;
+  color: #33691e;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+.order-tabs a.active {
+  background-color: #ffd82a;
+  color: black;
+}
+
+/* Orders List */
+.order-list {
+  padding: 16px;
+}
+
+.order-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 16px;
+  padding: 16px;
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.order-details {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.order-details img {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  margin-right: 12px;
+}
+
+.order-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.pay-btn {
+  background-color: #33691e;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #33691e;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  border-top: 1px solid #ccc;
+}
+
+.bottom-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 10px;
+}
+
+.bottom-nav a.active {
+  background-color: #ffd82a;
+  color: black;
+}
+

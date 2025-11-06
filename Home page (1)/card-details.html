@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Card Details - Quick</title>
+  <link rel="stylesheet" href="card-details.css" />
+</head>
+<body>
+  <header>
+    <button class="back-btn" onclick="history.back()">←</button>
+    <h2>Card Details</h2>
+  </header>
+
+  <form id="card-form">
+    <div class="form-group">
+      <label for="card-number">Card Number</label>
+      <input type="text" id="card-number" placeholder="1234 5678 9012 3456" maxlength="19" required />
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="expiry">Expiry Date</label>
+        <input type="text" id="expiry" placeholder="MM/YY" maxlength="5" required />
+      </div>
+      <div class="form-group">
+        <label for="cvv">CVV</label>
+        <input type="password" id="cvv" placeholder="123" maxlength="4" required />
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="card-name">Card Holder Name</label>
+      <input type="text" id="card-name" placeholder="Your Full Name" required />
+    </div>
+
+    <button type="submit" class="confirm-btn">Confirm Payment</button>
+  </form>
+
+  <script src="card-details.js"></script>
+</body>
+</html>

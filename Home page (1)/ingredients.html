@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ingredients</title>
+  <link rel="stylesheet" href="ingredients.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <button id="back-button" onclick="window.history.back()">&larr;</button>
+    <h1>Ingredients</h1>
+  </div>
+
+  <!-- Recipe Image -->
+  <div class="recipe-image">
+    <img src="image/hyderabadbiryani.jpg" alt="Biryani Recipe">
+  </div>
+
+  <!-- Ingredients Card -->
+  <div class="ingredients-card">
+
+    <!-- Ingredient 1 -->
+    <div class="ingredient-item">
+      <div class="ingredient-name">Basmati Rice</div>
+      <div class="ingredient-controls">
+        <input type="number" class="quantity" value="1" min="1">
+        <select class="unit">
+          
+          <option value="0" >  none </option>
+          <option value="50">50g</option>
+          <option value="100">100g</option>
+          <option value="250">250g</option>
+          <option value="500">500g</option>
+           <option value="1000" >kg</option>
+        </select>
+        <div class="price">Rs.900</div>
+      </div>
+    </div>
+
+    <!-- Ingredient 2 -->
+    <div class="ingredient-item">
+      <div class="ingredient-name">Chicken</div>
+      <div class="ingredient-controls">
+        <input type="number" class="quantity" value="1" min="1">
+        <select class="unit">
+          
+          <option value="0" >  none </option>
+          <option value="50">50g</option>
+          <option value="100">100g</option>
+          <option value="250">250g</option>
+          <option value="500">500g</option>
+          <option value="1000" >kg</option>
+        </select>
+        <div class="price">Rs.1200</div>
+      </div>
+    </div>
+
+    <!-- Ingredient 3 -->
+    <div class="ingredient-item">
+      <div class="ingredient-name">Onion</div>
+      <div class="ingredient-controls">
+        <input type="number" class="quantity" value="1" min="1">
+        <select class="unit">
+          
+          <option value="0" >  none </option>
+          <option value="50">50g</option>
+          <option value="100">100g</option>
+          <option value="250">250g</option>
+          <option value="500">500g</option>
+           <option value="1000" >kg</option>
+        </select>
+        <div class="price">Rs.200</div>
+      </div>
+    </div>
+
+    <!-- Ingredient 4 -->
+    <div class="ingredient-item">
+      <div class="ingredient-name">Tomato</div>
+      <div class="ingredient-controls">
+        <input type="number" class="quantity" value="1" min="1">
+        <select class="unit">
+          
+          <option value="0" >  none </option>
+          <option value="50">50g</option>
+          <option value="100">100g</option>
+          <option value="250">250g</option>
+          <option value="500">500g</option>
+           <option value="1000" >kg</option>
+        </select>
+        <div class="price">Rs.400</div>
+      </div>
+    </div>
+
+    
+    <div class="ingredient-item">
+      <div class="ingredient-name">தனி தூள் </div>
+      <div class="ingredient-controls">
+        <input type="number" class="quantity" value="1" min="1">
+        <select class="unit">
+          
+          <option value="0" >  none </option>
+          <option value="50">50g</option>
+          <option value="100">100g</option>
+          <option value="250">250g</option>
+          <option value="500">500g</option>
+          <option value="1000" >kg</option>
+        </select>
+        <div class="price">Rs.1500</div>
+      </div>
+    </div>
+    
+    
+    
+    
+     <div class="ingredient-item">
+      <div class="ingredient-name">வெள்ளை பூடு </div>
+      <div class="ingredient-controls">
+        <input type="number" class="quantity" value="1" min="1">
+        <select class="unit">
+          
+          <option value="0" >  none </option>
+          <option value="50">50g</option>
+          <option value="100">100g</option>
+          <option value="250">250g</option>
+          <option value="500">500g</option>
+          <option value="1000" >kg</option>
+        </select>
+        <div class="price">Rs.800</div>
+      </div>
+    </div>
+
+    
+     <div class="ingredient-item">
+      <div class="ingredient-name">இஞ்சி</div>
+      <div class="ingredient-controls">
+        <input type="number" class="quantity" value="1" min="1">
+        <select class="unit">
+          
+          <option value="0" >  none </option>
+          <option value="50">50g</option>
+          <option value="100">100g</option>
+          <option value="250">250g</option>
+          <option value="500">500g</option>
+          <option value="kg" >kg</option>
+        </select>
+        <div class="price">Rs.1500</div>
+      </div>
+    </div>
+
+    
+    
+    
+    <div class="ingredient-item">
+      <div class="ingredient-name">மிளகு</div>
+      <div class="ingredient-controls">
+        <input type="number" class="quantity" value="1" min="1">
+        <select class="unit">
+          
+          <option value="0" >  none </option>
+          <option value="50">50g</option>
+          <option value="100">100g</option>
+          <option value="250">250g</option>
+          <option value="500">500g</option>
+          <option value="kg" >kg</option>
+        </select>
+        <div class="price">Rs.900</div>
+      </div>
+    </div>
+    
+    <!-- More Ingredients can be added manually like this -->
+
+  </div>
+
+  <!-- Total Box -->
+  <div class="total-box">
+    <h2>Total: Rs. <span id="grand-total">0</span></h2>
+  </div>
+
+  <!-- Proceed Button -->
+  <div class="proceed-button-container">
+    <button id="checkout-button" onclick="proceedToCheckout()">Proceed to Checkout</button>
+  </div>
+
+  <script src="ingredients.js"></script>
+
+</body>
+</html>

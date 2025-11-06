@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #eef2f3;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+#checkout-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.checkout-item {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.grand-total {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#place-order-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#place-order-button:hover {
+  background-color: #0056b3;
+}
+

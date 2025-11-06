@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Add Address</title>
+  <link rel="stylesheet" href="add-address.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 0;
+      margin: 0;
+      background: #f9f9f9;
+    }
+    .top-bar {
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      background-color: #33691e;
+      color: white;
+    }
+    #backBtn {
+      background: none;
+      border: none;
+      font-size: 20px;
+      color: white;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+    .form-container {
+      padding: 20px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    .submit-btn {
+      background-color: #ffd82a;
+      color: #000;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      width: 100%;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="top-bar">
+    <button id="backBtn" onclick="history.back()">&#8592;</button>
+    <h2>Add Address</h2>
+  </div>
+
+  <div class="form-container">
+    <div class="form-group">
+      <label for="phone">Phone Number</label>
+      <input type="text" id="phone" placeholder="Enter Phone Number" maxlength="10" pattern="\d{10}" />
+    </div>
+    <div class="form-group">
+      <label for="street">Street (Home Address)</label>
+      <input type="text" id="street" placeholder="Enter Street" />
+    </div>
+    <div class="form-group">
+      <label for="division">Division</label>
+      <input type="text" id="division" placeholder="Enter Division" />
+    </div>
+    <div class="form-group">
+      <label for="famous">Famous Street Name</label>
+      <input type="text" id="famous" placeholder="Enter Famous Street Name" />
+    </div>
+    <button class="submit-btn" onclick="saveAddress()">Save Address</button>
+  </div>
+
+  <script>
+    function saveAddress() {
+      const phone = document.getElementById("phone").value.trim();
+      const street = document.getElementById("street").value.trim();
+      const division = document.getElementById("division").value.trim();
+      const famous = document.getElementById("famous").value.trim();
+
+      if (!phone || !street || !division || !famous) {
+        alert("Please fill in all fields.");
+        return;
+      }
+
+      const address = {
+        phone,
+        street,
+        division,
+        famous
+      };
+
+      localStorage.setItem("userAddress", JSON.stringify(address));
+      alert("Address saved successfully!");
+      window.location.href = "checkout.html"; // go back to checkout
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+/* Reset Basic Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f8f8;
+  padding-bottom: 100px; /* Proceed Buttonக்கு இடம் */
+}
+
+/* Top Bar */
+.top-bar {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background-color: #33691e;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+#back-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+/* Recipe Image */
+.recipe-image {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.recipe-image img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Ingredients Card */
+.ingredients-card {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Single Ingredient Item */
+.ingredient-item {
+  background-color: white;
+  padding: 15px 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ingredient-name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.ingredient-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.quantity {
+  width: 60px;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.unit {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #388e3c;
+}
+
+/* Total Box */
+.total-box {
+  margin: 30px 20px 20px 20px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: right;
+  font-size: 22px;
+  font-weight: bold;
+  color: #444;
+}
+
+/* Proceed Button */
+.proceed-button-container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  padding: 15px 20px;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#checkout-button {
+  width: 100%;
+  padding: 15px;
+  background-color:#ffd82a;
+  color: white;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#checkout-button:hover {
+  background-color: #2e7d32;
+}
+

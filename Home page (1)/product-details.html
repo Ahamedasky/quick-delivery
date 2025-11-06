@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Details</title>
+  <link rel="stylesheet" href="product-details.css" />
+</head>
+<body>
+  <div class="top-bar">
+    <h2>Product Details</h2>
+    <button class="cancel-btn" onclick="window.history.back()">✖</button>
+  </div>
+
+  <div class="product-container">
+    <img src="" alt="Product Image" class="product-img" id="product-img">
+    <h3 class="product-name" id="product-name">Product Name</h3>
+    <p class="product-price" id="product-price">Price: Rs.0 per Kg</p>
+   
+    
+    <div class="size-options">
+      <label>Size:</label>
+      <button class="size-btn" data-size="Small">Small</button>
+      <button class="size-btn active" data-size="Medium">Medium</button>
+      <button class="size-btn" data-size="Large">Large</button>
+    </div>
+
+    <div class="quantity-section">
+      <label>Quantity:</label>
+      <div class="quantity-wrapper">
+        <input type="number" id="quantity-input" min="1" value="1">
+        <select id="unit-select">
+          <option value="Kg">Kg</option>
+          <option value="500g">500g</option>
+          <option value="250g">250g</option>
+        </select>
+      </div>
+    </div>
+
+    <button class="buy-btn" onclick="goToCheckout()">Buy Now</button>
+    <button class="cart-btn">Add to Cart</button>
+  </div>
+
+  <script>
+    // Size button toggle
+    const sizeButtons = document.querySelectorAll('.size-btn');
+    sizeButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        sizeButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+      });
+    });
+
+    // Add to Cart function
+ document.querySelector('.cart-btn').addEventListener('click', function () {
+  const name = document.getElementById('product-name').textContent;
+  const image = document.getElementById('product-img').src;
+  const priceText = document.getElementById('product-price').textContent;
+  const priceMatch = priceText.match(/Rs\.?(\d+)/);
+  const price = priceMatch ? parseFloat(priceMatch[1]) : 0;
+  const size = document.querySelector('.size-btn.active').dataset.size;
+  const quantity = parseInt(document.getElementById('quantity-input').value);
+  const unit = document.getElementById('unit-select').value;
+
+  const cartItem = {
+    name,
+    image,
+    price,
+    size,
+    quantity,
+    unit
+  };
+
+  let cart = JSON.parse(localStorage.getItem('cart')) || [];
+  cart.push(cartItem);
+  localStorage.setItem('cart', JSON.stringify(cart));
+
+  alert("Product added to cart!");
+      window.location.href = 'cart.html'; // optional
+    });
+
+    function goToCheckout() {
+      alert("Proceeding to checkout...");
+      window.location.href = "checkout.html";
+    }
+  </script>
+  
+  
+  <script src="product-details.js"></script>  
+  <script src="da.product-details.js"></script>
+  <script src="co.product-details.js"></script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quick - Home</title>
+  <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+
+  <!-- Top Search Bar -->
+  <header class="top-bar">
+    <img src="image/logo.png" alt="Logo" class="logo">
+    <div class="search-container">
+      <input type="text"  id="search-input"   placeholder="Search vegetables..." />
+      <div id="product-grid"></div>
+      
+    </div>
+  </header>
+
+  <!-- Secondary Nav -->
+  <nav class="secondary-nav">
+    <a href="home.html" class="active">Vegetables</a>
+    <a href="spices.html">Spices</a>
+    <a href="chef.html">Chef</a>
+  </nav>
+
+  <!-- Product Grid -->
+<section class="product-grid">
+  <div class="product-card" data-soldout="false"  onclick='openProductDetails({name: "Carrot", price: 300, image: "image/carrot.png"})'>
+    <img src="image/carrot.png" alt="Carrot" />
+    <h4>Carrot</h4>
+    <p>Rs. 300 /kg</p>
+  </div>
+
+  <div class="product-card"    data-soldout="false"  data-name="beans" onclick='openProductDetails({name: "beans", price: 800, image: "image/beans.jpg"})' >
+    <img src="image/beans.jpg" alt="beans"  />
+    <h4>beans</h4>
+    <p>Rs. 800 /kg</p>
+  </div>
+
+  
+   <div class="product-card"   data-soldout="false"  onclick='openProductDetails({name: "onion", price: 200, image: "image/pak.onion.jpg"})'>
+    <img src="image/pak.onion.jpg" alt="onion" />
+    <h4>onion(pak)</h4>
+    <p>Rs. 200 /kg</p>
+  </div>
+  
+  
+  <div class="product-card"   data-soldout="false"   onclick='openProductDetails({name: "onion(ind)", price: 250, image: "image/ind.onion.jpg"})'>
+    <img src="image/ind.onion.jpg" alt="onion" />
+    <h4>onion(ind)</h4>
+    <p>Rs. 250 /kg</p>
+  </div>
+  
+  
+   <div class="product-card"  data-soldout="false"  onclick='openProductDetails({name: "potato(ind)", price: 200, image: "image/ind.potato.jpg"})'>
+    <img src="image/ind.potato.jpg" alt="potato" />
+    <h4>potato(ind)</h4>
+    <p>Rs. 200 /kg</p>
+  </div>
+  
+  
+   <div class="product-card"  data-soldout="false" onclick='openProductDetails({name: "potato(sl)", price: 400, image: "image/sl.potato.jpg"})'>
+    <img src="image/sl.potato.jpg" alt="potato" />
+    <h4>potato</h4>
+    <p>Rs. 400 /kg</p>
+  </div>
+  
+  
+   <div class="product-card"   data-soldout="false"   onclick='openProductDetails({name: "கத்தரிக்காய்", price: 500, image: "image/eggplant.jpg"})'>
+    <img src="image/eggplant.jpg" alt="கத்தரிக்காய்"  />
+    <h4>கத்தரிக்காய்</h4>
+    <p>Rs. 500 /kg</p>
+  </div>
+  
+  
+  
+   <div class="product-card"   data-soldout="false"   onclick='openProductDetails({name: "வாழைக்காய்", price: 200, image: "image/banana.jpg",})'>
+    <img src="image/banana.jpg" alt="வாழைக்காய்" />
+    <h4>வாழைக்காய்</h4>
+    <p>Rs. 200 /kg</p>
+  </div>
+  
+  
+   <div class="product-card"   data-soldout="false"   onclick='openProductDetails({name: "வெண்டைக்காய்", price: 300, image: "image/okra.jpg"})'>
+    <img src="image/okra.jpg" alt="வெண்டைக்காய்" />
+    <h4>வெண்டைக்காய்</h4>
+    <p>Rs. 300 /kg</p>
+  </div>
+  
+  
+   <div class="product-card"  data-soldout="true"  onclick='openProductDetails({name: "பயற்றங்காய்", price: 350, image: "image/longbeans.jpg"})'>
+    <img src="image/longbeans.jpg" alt="பயற்றங்காய்" />
+    <h4>பயற்றங்காய்</h4>
+    <p>Rs. 350 /kg</p>
+  </div>
+  
+  
+   <div class="product-card"   data-soldout="false"   onclick='openProductDetails({name: "லீக்ஸ்", price: 380, image: "image/leaks.jpg"})'>
+    <img src="image/leaks.jpg" alt="லீக்ஸ்" />
+    <h4>லீக்ஸ்</h4>
+    <p>Rs.380 /kg</p>
+  </div>
+   
+   <div class="product-card"   data-soldout="false"   onclick='openProductDetails({name: "பீட்ரூட்", price: 450, image: "image/beet.jpg"})'>
+    <img src="image/beet.jpg" alt="பீட்ரூட்" />
+    <h4>பீட்ரூட்</h4>
+    <p>Rs. 450 /kg</p>
+  </div>
+  
+  
+  <div class="product-card"   data-soldout="false"   onclick='openProductDetails({name: "பச்சை கொச்சிக்காய்", price: 900, image: "image/greenchilli.jpg"})'>
+    <img src="image/greenchilli.jpg" alt="பச்சை கொச்சிக்காய்" />
+    <h4>பச்சை கொச்சிக்காய்</h4>
+    <p>Rs. 900 /kg</p>
+  </div>
+  
+  
+  
+   <div class="product-card"   data-soldout="false"   onclick='openProductDetails({name: "சின்ன வெங்காயம்", price: 320, image: "image/smallonion.jpg"})'>
+    <img src="image/smallonion.jpg" alt="சின்ன வெங்காயம்" />
+    <h4>சின்ன வெங்காயம்</h4>
+    <p>Rs. 320 /kg</p>
+  </div>
+  
+  
+  <div class="product-card"    data-soldout="false"    onclick='openProductDetails({name: "கோவா", price: 520, image: "image/goa.jpg"})'>
+    <img src="image/goa.jpg" alt="கோவா" />
+    <h4>கோவா</h4>
+    <p>Rs. 520 /kg</p>
+  </div>
+  
+  
+  
+  
+  <div class="product-card"   data-soldout="false"   onclick='openProductDetails({name: "தக்காளி ", price: 400, image: "image/tomato.png"})'>
+    <img src="image/tomato.png" alt="தக்காளி" />
+    <h4>தக்காளி</h4>
+    <p>Rs. 400 /kg</p>
+  </div>
+  
+  
+  
+  
+  <div class="product-card"   data-soldout="true"   onclick='openProductDetails({name: "புடோல்", price: 250, image: "image/pudol.jpg"})'>
+    <img src="image/pudol.jpg" alt="புடோல்" />
+    <h4>புடோல்</h4>
+    <p>Rs. 250 /kg</p>
+  </div>
+  
+  
+  
+  
+  <div class="product-card"   data-soldout="false"  onclick='openProductDetails({name: "பாகற்காய்", price: 400, image: "image/bitter.jpg"})'>
+    <img src="image/bitter.jpg" alt="பாகற்காய்" />
+    <h4>பாகற்காய்</h4>
+    <p>Rs. 480 /kg</p>
+  </div>
+  
+  
+  
+  <div class="product-card"  data-soldout="false"    onclick='openProductDetails({name: "கறி மிளகாய்", price: 560, image: "image/CurryChilli.jpg"})'>
+    <img src="image/CurryChilli.jpg" alt="கறி மிளகாய்" />
+    <h4>கறி மிளகாய்</h4>
+    <p>Rs. 560 /kg</p>
+  </div>
+  
+  
+  
+  
+  <div class="product-card"   data-soldout="false"   onclick='openProductDetails({name: "சுரக்காய்", price: 200, image: "image/pumkin.jpg"})'>
+    <img src="image/pumkin.jpg" alt="சுரக்காய்" />
+    <h4>சுரக்காய்</h4>
+    <p>Rs. 200 /kg</p>
+  </div>
+  
+  
+  
+  
+  
+  <!-- மேலும் vegetables இங்கு சேர்க்கலாம் -->
+</section>
+   
+
+  <!-- Bottom Navigation -->
+  <footer class="bottom-nav">
+    <a href="home.html" class="active">Home</a>
+    <a href="cart.html">Cart</a>
+    <a href="order-topay.html">Orders</a>
+    <a href="navigatebar.html">My Account</a>    
+  </footer>
+  
+  
+  <script src="home.js"></script>
+</body>
+</html>
+

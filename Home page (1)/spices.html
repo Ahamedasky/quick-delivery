@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quick - Spices</title>
+  <link rel="stylesheet" href="spices.css" />
+</head>
+<body>
+  <!-- Top Search Bar -->
+  <div class="top-bar">
+    <img src="image/logo.png" class="logo" alt="Quick Logo" />
+    <div class="search-container">
+      <input type="text"  id="search-input" placeholder="Search spices..." />
+      <div id="product-grid"></div>
+    </div>
+  </div>
+
+  <!-- Secondary Navigation -->
+  <div class="secondary-nav">
+    <a href="home.html">Vegetables</a>
+    <a href="spices.html" class="active">Spices</a>
+    <a href="chef.html">Chef</a>
+  </div>
+
+  <!-- Spices Product List -->
+  <div class="product-grid" id="spicesList">
+
+    <div class="product-card"  data-soldout="true" onclick='openProductDetails({name: "தனித்தூள்", price: 1500/  , image: "image/redchilli.jpg"})'>
+    <img src="image/redchilli.jpg" alt="தனித்தூள்" />
+    <h4>தனித்தூள்</h4>
+    <p>Rs. 1500 /kg</p>
+  </div>
+    
+    
+    <div class="product-card"  data-soldout="false" onclick='openProductDetails({name: "மஞ்சள் தூள்", price: 2000  , image: "image/yellowpowder.jpg"})'>
+    <img src="image/yellowpowder.jpg" alt="மஞ்சள் தூள்" />
+    <h4>மஞ்சள் தூள்</h4>
+    <p>Rs. 2000 /kg</p>
+  </div>
+    
+    
+<div class="product-card"  data-soldout="false" onclick='openProductDetails({name: "உப்பு", price: 150, image: "image/salt.jpg"})'>
+    <img src="image/salt.jpg" alt="உப்பு" />
+    <h4>உப்பு</h4>
+    <p>Rs. 150 /1pak</p>
+  </div>
+  
+
+    
+    <div class="product-card"  data-soldout="false" onclick='openProductDetails({name: "வெள்ளை பூடு", price: 800, image: "image/garlic.jpg"})'>
+    <img src="image/garlic.jpg" alt="வெள்ளை பூடு" />
+    <h4>வெள்ளை பூடு</h4>
+    <p>Rs. 800 /kg</p>
+  </div>
+    
+    
+    
+    <div class="product-card"  data-soldout="false" onclick='openProductDetails({name: "இஞ்சி", price: 1500, image: "image/ginger.jpg"})'>
+    <img src="image/ginger.jpg" alt="இஞ்சி" />
+    <h4>இஞ்சி</h4>
+    <p>Rs. 1500 /kg</p>
+  </div>
+    
+    
+    <div class="product-card"  data-soldout="false" onclick='openProductDetails({name: "காய்ந்த கொச்சிக்காய்", price: 1000, image: "image/drychilli.jpg"})'>
+    <img src="image/drychilli.jpg" alt="காய்ந்த கொச்சிக்காய்" />
+    <h4>காய்ந்த கொச்சிக்காய்</h4>
+    <p>Rs. 1000 /kg</p>
+  </div>
+    
+    
+    <div class="product-card"  data-soldout="false" onclick='openProductDetails({name: "சீரகம்", price: 1200, image: "image/cumin.jpg"})'>
+    <img src="image/cumin.jpg" alt="சீரகம்" />
+    <h4>சீரகம்</h4>
+    <p>Rs. 1200 /kg</p>
+  </div>
+    
+    
+    <div class="product-card"  data-soldout="false" onclick='openProductDetails({name: "மிளகு", price: 900, image: "image/pepper.jpg"})'>
+    <img src="image/pepper.jpg" alt="மிளகு" />
+    <h4>மிளகு</h4>
+    <p>Rs. 900 /kg</p>
+  </div>
+    
+    
+    
+    
+    
+  <!-- மேலும் பொருட்கள் இவ்வாறு... -->
+
+</div>
+  <!-- Bottom Navigation -->
+  <div class="bottom-nav">
+    <a href="home.html" class="active">Home</a>
+    <a href="cart.html">Cart</a>
+    <a href="order-topay.html">Orders</a>
+    <a href="navigatebar.html"> My Account</a>    
+  </div>
+  
+  
+  
+  <script src="spices.js"></script>
+</body>
+</html>

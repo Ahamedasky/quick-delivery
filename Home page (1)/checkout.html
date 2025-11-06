@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quick - Checkout</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+  <link rel="stylesheet" href="checkout.css" />
+</head>
+<body>
+  <header>
+    <button class="back-btn" onclick="history.back()">←</button>
+    <h2>Checkout</h2>
+  </header>
+
+  <!-- Address Section -->
+  <section class="section">
+    <h3>Delivery Address</h3>
+    <div id="address-box" class="address-box">
+      <a href="add-address.html" class="add-address-btn">
+        <span id="display-address">+ Add New Address</span>
+      </a>
+    </div>
+    <button id="delete-address-btn" class="delete-btn" style="display: none;">Delete</button>
+  </section>
+
+  <!-- Payment Method -->
+  <section class="section">
+    <h3>Payment Method</h3>
+    <div class="payment-method" onclick="selectPayment('cod')">
+      <span>Cash on Delivery</span>
+      <i class="fas fa-hand-holding-usd"></i>
+      <input type="radio" id="pay-cod" name="payment" value="cod" />
+    </div>
+    <div class="payment-method" onclick="selectPayment('card')">
+      <a class="card" href="card-details.html"><span>Visa / MasterCard</span></a>
+      <i class="far fa-credit-card"></i>
+      <input type="radio" id="pay-card" name="payment" value="card" />
+    </div>
+  </section>
+
+  <!-- Product Summary -->
+  <section class="section">
+    <h3>Order Summary</h3>
+    <div class="product-item">
+      <img src="image/tomato.png" id="product-img" />
+      <div class="product-info">
+        <p id="product-name">Fresh Tomato</p>
+        <p id="product-qty">Qty:</p>
+        <p id="product-unit">Unit:</p>
+        <p id="product-price">Price: Rs.</p>
+        <div class="shipping-info">Shipping: Rs.50 • Delivery in 30 minutes</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Total Summary -->
+  <div class="total-box">
+    <div class="row">
+      <span>Item Total</span>
+      <span id="item-total">Rs.0</span>
+    </div>
+    
+    
+    <div class="summary-item" id="discount-row" style="display: none;">
+  <span>Discount (20%)</span>
+  <span id="discount-amount">-Rs.0.00</span>
+</div>
+    
+    
+    
+    
+    <div class="row">
+      <span>Shipping Fee</span>
+      <span id="shipping-fee">Rs.50</span>
+    </div>
+    
+    
+    
+    <div class="row total">
+      <span>Grand Total</span>
+      <span id="grand-total">Rs.0</span>
+    </div>
+  </div>
+
+  <!-- Place Order -->
+  <div class="place-order">
+    <div class="total-amount" id="final-total">Rs.0</div>
+    <button id="place-order-btn">Place Order</button>
+  </div>
+
+  <script src="checkout.js"></script>
+  <script src="fa.checkout.js"></script>
+</body>
+</html>

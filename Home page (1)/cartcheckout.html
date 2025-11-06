@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checkout</title>
+  <link rel="stylesheet" href="cartcheckout.css" />
+</head>
+<body>
+  <div class="top-bar">
+    <button class="back-btn" onclick="window.history.back()">← Back</button>
+    <h2>Checkout</h2>
+  </div>
+
+  <div class="section address-section">
+    <h3>Delivery Address</h3>
+    <p id="display-address">+ Add Address</p>
+    <button id="delete-address-btn" style="display: none;">Delete</button>
+  </div>
+
+  <div class="section">
+    <h3>Payment Method</h3>
+    <label><input type="radio" name="payment" id="pay-cod"> Cash on Delivery</label><br/>
+    <label><input type="radio" name="payment" id="pay-card"> Visa / MasterCard</label>
+  </div>
+
+  <div class="section">
+    <h3>Products</h3>
+    <div id="product-summary">     
+           
+    </div>
+  
+
+   
+  <div class="section total-section">
+    <p>Subtotal (after discount): <span id="subtotal">Rs.0</span></p>
+     
+    
+    <p>Shipping: Rs.50</p>    <h3>Total: <span id="grand-total">Rs.0</span></h3>
+    </div>
+    
+    
+  <div class="bottom-bar">
+    <span id="total-text">Rs.0</span>
+    <button id="place-order-btn">Place Order</button>
+  </div>
+
+  <script src="fa.cartcheckout.js"></script>
+  <script src="cartcheckout.js"></script>
+</body>
+</html>

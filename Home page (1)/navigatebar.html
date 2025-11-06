@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Account - Quick</title>
+  <link rel="stylesheet" href="navigatebar .css" />
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <a href="home.html" ><button class="back-button" onclick="history.back()">← back </button> </a>                                             
+    <span>  <img src="image/logo.png" alt="Logo" class="logo"> </span>   
+  </div>
+  
+
+  <!-- Account Info -->
+  <div class="account-container">
+    <img src="image/asky.jpg" alt="Profile" class="profile-img">
+    <h2>Customer Name</h2>
+    <p class="email">example@gmail.com</p>
+    <hr>
+    <!-- Settings Section -->
+    <div class="settings">
+      <h3>Settings</h3>
+      <ul>
+        <li><strong>Town:</strong> Sammanthurai</li>
+        <li><strong>Address:</strong> 2/23, Main 2nd Street</li>
+        <li><strong>Phone:</strong> +94 77 123 4567</li>
+        <li><button onclick="deleteAccount()">Delete Account</button></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Bottom Navigation -->
+  <nav class="bottom-nav">
+    <a href="Home.html">Home</a>
+    <a href="cart.html">Cart</a>
+    <a href="order-topay.html">Orders</a>
+    <a href="navigatebar.html" class="active">My Account</a>
+  </nav>
+
+  <script src="navigatebar .js"></script>
+</body>
+</html>
